@@ -3,6 +3,12 @@
 /**
  * Enqueue child styles.
  */
+// function child_theme_support()
+// {
+//     wp_nav_menu('header', 'Primary Menu');
+//     wp_nav_menu('footer', 'Footer Menu');
+// }
+
 function child_theme_enqueue_styles()
 {
     //chargement du thème parent
