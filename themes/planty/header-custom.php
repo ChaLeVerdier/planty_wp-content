@@ -55,5 +55,8 @@
 
     ?>
 
-
+        <div class="header-button">
+        <a href="<?php echo esc_url( home_url( '/commander' ) ); ?>" class="button">Commander</a>
+    </div>
+    
 </header>
