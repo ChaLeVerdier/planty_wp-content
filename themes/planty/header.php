@@ -10,12 +10,11 @@
  * @since 1.0.0
  */
 
-// if ( ! defined( 'ABSPATH' ) ) {
-// 	exit; // Exit if accessed directly.
-// }
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 ?>
-
 
 <!-- *** HEAD *** -->
 <!DOCTYPE html>
@@ -23,10 +22,10 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<!-- Inclure le fichier CSS pour le style du thème -->
-	<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/css/theme.css">
+	
+	
 	<?php wp_head(); ?>
-
+<!-- wp_head def à aller voir -->
 </head>
 
 
@@ -61,8 +60,7 @@
 	<?php // ici est le HEADER 
 	astra_header_before();
 	
-	//astra_header();
-	//Inclure le header personnalisé
+	
 	get_template_part('header-custom'); // Création d'un fichier header-custom.php à la racine qui recevra le code de notre header personnalisé
 	
 	astra_header_after();
