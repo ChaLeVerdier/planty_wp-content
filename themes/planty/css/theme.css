@@ -1,18 +1,19 @@
 /********** GENERAL ***********/
 
-/* Pour tous le site : Reset des valeurs par defaut */
-*,
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+
+*, /* Pour tous le site : Reset des valeurs par defaut */
 ::before,
 ::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 * {
-  font-family: "", sans-serif;
+  font-family: "syne", sans-serif;
 }
 html {
-  font-family: "", sans-serif;
+  font-family: "syne", sans-serif;
 }
 :root {
   --main-color: white;
@@ -23,9 +24,42 @@ html {
   --max-width: ;
   --min-width: ;
 }
-
-.home .site-content {
-  background-color: #ece2da;
+.hero{ /* conteneur de la canette */ 
+  height: 618px ;
+  width: 640px;
+  position: relative;
+  /* background-color: yellow; */
+}
+.canette{ /* *** home image centrale canette *** */
+  z-index: 2;
+  position: absolute;
+}
+.leaf-left{ /* *** home image centrale feuille gauche *** */
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  bottom: 70px; 
+  /* background-color: red; */
+}
+.leaf-right{ /* *** home image centrale feuille droite *** */
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom:70px; 
+  /* background-color: green */
+}
+.divider{
+  border-radius: 0 0 20% 20%;
+}
+.toto{ 
+  border: green solid 5px !important;
+}
+.wpcf7-form-control {
+  border: green solid 5px !important;
+  justify-content: center !important;
+}
+.submit{
+  border: red solid 5px !important;
 }
 
 /********** HEADER **************/
@@ -33,7 +67,7 @@ html {
   position: sticky;
   z-index: 10;
   top: 0;
-  background-color: white;
+  background-color: white; 
 }
 .site-header {
   width: 100%; /* Largeur de 100% pour s'adapter à la largeur de l'écran */
@@ -97,8 +131,8 @@ html {
 
 
 /* BODY accueil */
-.titre-h1{
-color:green
+#titleh2{
+color:red
 }
 
 
