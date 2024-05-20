@@ -101,6 +101,53 @@ html {
     text-align: center;
 }
 
+
+
+
+/* COMMANDER */
+
+.informations-livraisons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Espace entre les groupes */
+}
+
+.contact-form__group {
+  flex: 1;
+  min-width: 300px;
+  /* Largeur minimale pour chaque groupe */
+  border: 1px solid #ccc;
+  /* Optionnel: bordure pour délimiter chaque fieldset */
+  padding: 1rem;
+  /* Optionnel: padding interne pour chaque fieldset */
+  border-radius: 4px;
+  /* Optionnel: coins arrondis pour chaque fieldset */
+}
+
+.contact-form__legend {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  /* Espace entre la légende et les champs */
+}
+
+.contact-form__field {
+  margin-bottom: 1rem;
+}
+
+.contact-form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 /* Menu Mobile */
 .mobile-menu {
   display: none;
@@ -137,7 +184,11 @@ color:red
 
 
 
+/* HOME */
 
+.shape-divider2 {
+  transform: translateY(-90px);
+}
 
 
 /**************** FOOTER ******************/
