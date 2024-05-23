@@ -139,7 +139,7 @@
 .fleurs-top{
     position: relative;
     right: 450px;
-     top: 70px;
+    top: 70px;
 }
 .equipe-feuille{
     z-index: 1;
@@ -147,8 +147,16 @@
     left: -130px;
     top: 92px;
 }
-
+.form-feuille{
+  z-index: -1;
+  position: relative;
+  left: 380px;
+  bottom: 270px;
+}
 /* Formulaire  */
+.wpcf7-form-control {
+  padding: 0;
+}
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -156,7 +164,7 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
+  }
 
 /**************** PAGE COMMANDER *****************/
 
