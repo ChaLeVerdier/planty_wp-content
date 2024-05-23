@@ -1,0 +1,51 @@
+        I/     FICHIER 3 planty
+
+1) Accéder directement au fichier CSS via l'URL : (fichier3 p. 07):
+    Le chemin ne fonctionne pas, ni :
+    http://planty/app/public/wp-content/themes/planty/style.css
+
+
+2) Dans : function child_theme_enqueue_scripts() {
+   wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), '1.0', true);}
+Définition : '1.0' : C'est la version de votre feuille de style. Cela permet de contrôler le cache du navigateur.Si vous mettez à jour votre CSS, vous pouvez augmenter le numéro de version pour forcer le navigateur à charger la nouvelle version plutôt que de la mettre en cache. EXPLICATION ?
+    Tu peux m'expliquer ?
+
+3) Toute la section admin + filter (fichier3 p. 12): 
+    Explication ?
+
+4)*** Intégration de la nav en php. (fichier3 p. 16): 
+    explication et pourquoi est il commenté dans le fichier fonction ?
+    Les conditions if dans le menu permettent la sécurisation ? if ( has_nav_menu( 'primary' ) ) 
+    pourquoi ne met-on as un false ou une redirection si le menu n'est pas trouvé ?
+    menu footer : // 'container_role' => 'navigation', // Ajouter l'attribut role="navigation", necessaire ?
+
+5) Suite du fichier3 p. 21 jusqu'a p. 37:  Important à comprendre et savoir ?
+
+               
+               
+                               ******************************************
+
+       II/ FICHIER head.php et header.php
+
+       1) voir si tout est ok, parce qu'en suivant les instructions le comportement de mes pages à changé et j'ai du aller chercher une version précédente de mon code. 
+               
+       2) En mode responsive mon menu ne se place pas du tout comme il devrais.         
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                ******************************************
+
+       III/ FICHIER theme.css 
+
+1) /* Navigation Links Hover : pas précisé */
+   /* Navigation Links Active : pas précisé */
+        A faire ?
+
