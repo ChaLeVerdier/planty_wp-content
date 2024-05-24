@@ -14,6 +14,7 @@ function child_theme_enqueue_styles()
     //chargement du thème parent
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css'); 
     //chargement du thème enfant
+    wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'), '1.0', 'all');
     wp_enqueue_style('child-theme', get_stylesheet_directory_uri() . '/css/theme.css', array('parent-style'), '1.0','all'); 
 }
 
@@ -72,7 +73,7 @@ function list_theme_hooks_function() {
 }
 
 // Shortcode pour afficher les hooks du thème actif
-// Shortcode pour afficher les hooks du thème actif
+
 function list_theme_hooks_shortcode() {
    return list_theme_hooks_function();
 }

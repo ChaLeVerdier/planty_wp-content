@@ -94,19 +94,20 @@
 .leaf-left { 
   z-index: 1;
   position: absolute;
-  left: 0px;
-  bottom: 70px; 
-  }
+  left: 348px;
+  bottom: 77px; 
+}
 .leaf-right { 
   z-index: 1;
   position: absolute;
-  right: 0;
-  bottom:70px; 
+  right: 372px;
+  bottom:77px; 
 }
 
 /***************** PAGE HOME *****************/
 .shape-divider-container{
   margin: 0;
+  border-radius: 0,0, 150px, 150px;
 }
 .shape-divider1{
   z-index: 1;
@@ -138,24 +139,32 @@
 
 .fleurs-top{
     position: relative;
-    right: 450px;
+    right: 200px;
     top: 70px;
 }
+.section-equipe{
+  max-height: 554px;
+}
 .equipe-feuille{
-    z-index: 1;
+    z-index: -1;
     position: relative;
-    left: -130px;
-    top: 92px;
+    right: -170px;
+    bottom: 250px;
 }
 .form-feuille{
-  z-index: -1;
+  z-index: 1;
   position: relative;
   left: 380px;
-  bottom: 270px;
+  bottom: 300px;
 }
 /* Formulaire  */
 .wpcf7-form-control {
+  /* z-index: 2; */
   padding: 0;
+ }
+.wpcf7 js icf7s-225{
+  padding: 0 ;
+  margin: 0 ;
 }
 .sr-only {
   position: absolute;
@@ -167,7 +176,9 @@
   }
 
 /**************** PAGE COMMANDER *****************/
-
+.contact-form-7{
+  align-content: center;
+}
 .informations-livraisons {
   align-items: center;
   display: flex;
@@ -175,7 +186,6 @@
   gap: 20px;
   /* Espace entre les groupes */
 }
-
 .contact-form__group {
   flex: 1;
   min-width: 300px;
@@ -187,36 +197,38 @@
   border-radius: 4px;
   /* Optionnel: coins arrondis pour chaque fieldset */
 }
-
 .contact-form__legend {
   font-weight: bold;
   margin-bottom: 1rem;
+  color: white;
+  border: none !important;
+  font-size: 1.5rem;
+  font-weight: 700;
   /* Espace entre la légende et les champs */
 }
-
 .contact-form__field {
   margin-bottom: 1rem;
   flex-direction: column;
 }
-
 .contact-form__label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-
 .contact-form__input {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.saveur-button{
+  border: 1px solid #dc9f96 !important;
+  border-radius: 7px !important;
+}
 .info-livraison-button{
   border:  1px solid #dc9f96 !important;
   border-radius: 7px !important;
-  align-items: center !important;
-  background-color: #DC9F96 !important;
-}
+} 
 
 /**************** FOOTER ******************/
 
